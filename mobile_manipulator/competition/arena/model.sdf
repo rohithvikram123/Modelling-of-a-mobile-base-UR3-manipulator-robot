@@ -1,0 +1,90 @@
+<sdf version='1.7'>
+  <model name='arena'>
+    <link name='base_link'>
+      <inertial>
+        <pose>-0.031819 -0.449892 0.243258 0 -0 0</pose>
+        <mass>17511.1</mass>
+        <inertia>
+          <ixx>448739</ixx>
+          <ixy>8841.84</ixy>
+          <ixz>-3530.2</ixz>
+          <iyy>754791</iyy>
+          <iyz>8093.24</iyz>
+          <izz>471733</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://arena/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__check_point_collision_1'>
+        <pose>1.27331 -2.67369 0.000283 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://arena/meshes/check_point.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__track_collision_2'>
+        <pose>-0.75869 -0.133689 0.000283 -1.5708 -0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://arena/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://arena/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+        <material> <!-- Wheel material -->
+          <ambient>0 0 0 1</ambient>
+          <diffuse>0 0 0 1</diffuse>
+          <specular>0 0 0 0</specular>
+          <emissive>0 0 0 1</emissive>
+        </material> 
+      </visual>
+      <visual name='base_link_fixed_joint_lump__check_point_visual_1'>
+        <pose>1.27331 -2.67369 0.000283 1.5708 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://arena/meshes/check_point.STL</uri>
+          </mesh>
+        </geometry>
+        <material> <!-- Wheel material -->
+          <ambient>1 1 0.501960784313725 1</ambient>
+          <diffuse>1 1 0.501960784313725 1</diffuse>
+          <specular>0 0 0 0</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__track_visual_2'>
+        <pose>-0.75869 -0.133689 0.000283 -1.5708 -0 -1.5708</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://arena/meshes/track.STL</uri>
+          </mesh>
+        </geometry>
+        <material> <!-- Wheel material -->
+          <ambient>0.501960784313725 0.501960784313725 0.501960784313725 1</ambient>
+          <diffuse>0.501960784313725 0.501960784313725 0.501960784313725 1</diffuse>
+          <specular>0 0 0 0</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

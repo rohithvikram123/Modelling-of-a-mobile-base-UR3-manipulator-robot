@@ -1,0 +1,13 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/srv/enpm809e_ws/install/first_package/lib/python3.8/site-packages",
+        "/opt/ros/galactic/lib/python3.8/site-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/srv/enpm809e_ws/install/first_package/lib/python3.8/site-packages",
+        "/opt/ros/galactic/lib/python3.8/site-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "cmake.configureOnOpen": false
+}
